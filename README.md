@@ -39,7 +39,7 @@ some information, including its file **version**, **well description**,
 
 [back to top](#las_converter)
 
-This project uses **Python 3** with dependencies provided in **requirements.txt**. 
+This project uses **Python 3** with dependencies provided in **[requirements.txt](https://github.com/oilshit/las_converter/blob/master/requirements.txt)**. 
 
 [back to top](#las_converter)
 
@@ -48,6 +48,12 @@ This project uses **Python 3** with dependencies provided in **requirements.txt*
 ### Project setup
 
 [back to top](#las_converter)
+
+Firstly, you need to clone this repository using this command below on Terminal (Linux or Mac) or [WSL]("Windows Subsystem for Linux") (Windows).
+```sh
+git clone https://github.com/oilshit/las_converter
+cd las_converter
+```
 
 Python environment setup is recommended for using this project repository. Type `./check-pyenv.sh` (using Linux/Unix terminal console or WSL console) for validating Python environments. By default, Python `virtualenv` has not been set yet so that it will be return results as below.
 
