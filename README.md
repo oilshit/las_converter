@@ -49,7 +49,7 @@ This project uses **Python 3** with dependencies provided in **[requirements.txt
 
 [back to top](#las_converter)
 
-Firstly, you need to clone this repository using this command below on Terminal (Linux or Mac) or [WSL](# "Windows Subsystem for Linux") (Windows).
+Firstly, you need to clone this repository using this command below on Terminal (Linux or Mac) or <a href="https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux" target="_blank"><abbr title="Windows Subsystem for Linux">WSL</abbr></a> (Windows).
 ```sh
 git clone https://github.com/oilshit/las_converter
 cd las_converter
