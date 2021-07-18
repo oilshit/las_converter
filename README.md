@@ -66,6 +66,19 @@ Python environment setup is recommended for using this project repository. Type 
  pip install -r requirements.txt
 ```
 
+or you can [create the environment variable manually](https://docs.python.org/3/library/venv.html) by typing command below on Linux or MacOS (and also WSL console).
+
+```
+python -m venv venv
+source venv/bin/activate
+```
+
+and also for Windows.
+```
+python -m venv venv
+venv\Scripts\activate
+```
+
 In terminal, just type the yellow text given to proceed.
 
 [back to top](#las_converter)
@@ -95,8 +108,8 @@ from las_converter import WellLog
 help(WellLog)
 ```
 
-There is a file named `las_testing.py` used for testing purposes. There is also Jupyter Notebook file called `using_las_converter_in_well_log_analysis.ipynb` that also can be used in Jupyter console.
+There is a file named `las_testing.py` used for testing purposes. There is also Jupyter Notebook file called `using_las_converter_in_well_log_analysis.ipynb` that also can be used in [Google Colab console](https://colab.research.google.com/drive/1_XJR7pNvJtV66NiKFD4v60GIAjYK3f-C?usp=sharing).
 
-For testing the saved files in `results` folder, there is also Jupyter Notebook file `using_csv_made_from_las_converter_for_well_log_analysis.ipynb`.
+For testing the saved files in `results` folder, there is also [Google Colab Notebook file](https://colab.research.google.com/drive/1a-HC1smv6r34TH6bhvemqkEOwjpyiYiV?usp=sharing) `using_csv_made_from_las_converter_for_well_log_analysis.ipynb`.
 
 [back to top](#las_converter)

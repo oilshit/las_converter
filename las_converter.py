@@ -189,7 +189,7 @@ class WellLog():
     def save_file(self, file_as):
         """
         Save the LAS file into other file
-        JSON file supported
+        JSON and CSV file are supported
         
           parameter input(s):
             - file_as (str)
