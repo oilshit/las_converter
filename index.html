@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <style>
+      html,
+      body {
+        width: 80%;
+      }
+
+      body {
+        color: black;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        margin: auto;
+        line-height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="las_converter">las_converter</h1>
+    <h2 id="python-projects-for-well-log-analysis">
+      Python projects for well log analysis
+    </h2>
+    <p>
+      <a href="#what-is-las-file">What is LAS file</a> |
+      <a href="#project-features">Project feature(s)</a> |
+      <a href="#project-dependencies">Project dependencies</a> |
+      <a href="#project-setup">Project setup</a> |
+      <a href="#getting-started">Getting started</a>
+    </p>
+    <hr />
+    <h3 id="what-is-las-file">What is LAS file</h3>
+    <p><a href="#las_converter">back to top</a></p>
+    <p>
+      <strong>LAS</strong> file contains physical properties data of vertical
+      subsurface used in well log analysis. Well log data saved in LAS file
+      contains some information, including its file <strong>version</strong>,
+      <strong>well description</strong>,
+      <strong>physical rock curve</strong> along with
+      <strong>data table</strong> and <strong>other information</strong> related
+      to the well data.
+    </p>
+    <p><a href="#las_converter">back to top</a></p>
+    <hr />
+    <h3 id="project-feature-s-">Project feature(s)</h3>
+    <p><a href="#las_converter">back to top</a></p>
+    <ul>
+      <li>
+        Load LAS data from various sources:
+        <ul>
+          <li>
+            URL link
+            (<code>https://example.com/.../.../path/to/lasfile.LAS</code>)
+          </li>
+          <li>
+            Local file (<code>path/to/lasfile.LAS</code> instead without
+            <code>https</code>)
+          </li>
+        </ul>
+      </li>
+      <li>Getting well log description.</li>
+      <li>
+        Save well log data into JSON file (as <code>well.json</code> in
+        <code>results</code> folder).
+      </li>
+      <li>
+        It also can save data into CSV file with two different outputs in
+        <code>results</code> folder
+        <ul>
+          <li><code>well.csv</code> contains well data table</li>
+          <li>
+            <code>description.csv</code> contains well data legends and
+            description
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p><a href="#las_converter">back to top</a></p>
+    <hr />
+    <h3 id="project-dependencies">Project dependencies</h3>
+    <p><a href="#las_converter">back to top</a></p>
+    <p>
+      This project uses <strong>Python 3</strong> with dependencies provided in
+      <strong
+        ><a
+          href="https://github.com/oilshit/las_converter/blob/master/requirements.txt"
+          >requirements.txt</a
+        ></strong
+      >.
+    </p>
+    <p><a href="#las_converter">back to top</a></p>
+    <hr />
+    <h3 id="project-setup">Project setup</h3>
+    <p><a href="#las_converter">back to top</a></p>
+    <p>
+      Firstly, you need to clone this repository using this command below on
+      Terminal (Linux or Mac) or
+      <a
+        href="https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux"
+        target="_blank"
+        ><abbr title="Windows Subsystem for Linux">WSL</abbr></a
+      >
+      (Windows).
+    </p>
+    <pre><code class="lang-sh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://github.com/oilshit/las_converter
+cd las_converter
+</code></pre>
+    <p>
+      Python environment setup is recommended for using this project repository.
+      Type <code>./check-pyenv.sh</code> (using Linux/Unix terminal console or
+      WSL console) for validating Python environments. By default, Python
+      <code>virtualenv</code> has not been set yet so that it will be return
+      results as below.
+    </p>
+    <pre><code class="lang-sh">'env' directory <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> exist.
+ you can install Python virtualenv (<span class="hljs-keyword">and</span> also <span class="hljs-built_in">activate</span> <span class="hljs-keyword">it</span>) <span class="hljs-keyword">by</span>
+ virtualenv env; source env/bin/<span class="hljs-built_in">activate</span> 
+
+ install Python dependencies <span class="hljs-keyword">then</span> <span class="hljs-keyword">by</span>
+ pip install -r requirements.txt
+</code></pre>
+    <p>
+      or you can
+      <a href="https://docs.python.org/3/library/venv.html"
+        >create the environment variable manually</a
+      >
+      by typing command below on Linux or MacOS (and also WSL console).
+    </p>
+    <pre><code>python -m venv venv
+<span class="hljs-keyword">source</span> venv<span class="hljs-regexp">/bin/</span>activate
+</code></pre>
+    <p>and also for Windows.</p>
+    <pre><code>python -m venv venv
+venv<span class="hljs-symbol">\S</span>cripts<span class="hljs-symbol">\a</span>ctivate
+</code></pre>
+    <p>In terminal, just type the yellow text given to proceed.</p>
+    <p><a href="#las_converter">back to top</a></p>
+    <hr />
+    <h3 id="getting-started">Getting started</h3>
+    <p><a href="#las_converter">back to top</a></p>
+    <p>For the first time use, firstly import the external function by</p>
+    <pre><code class="lang-py"># <span class="hljs-keyword">import</span> las_converter
+<span class="hljs-keyword">import</span> las_converter
+
+# <span class="hljs-keyword">get</span> help
+help(las_converter)
+</code></pre>
+    <p>or</p>
+    <pre><code class="lang-py"># <span class="hljs-keyword">import</span> las_converter
+<span class="hljs-keyword">from</span> las_converter <span class="hljs-keyword">import</span> WellLog
+
+# get help
+help(WellLog)
+</code></pre>
+    <p>
+      There is a file named <code>las_testing.py</code> used for testing
+      purposes. There is also Jupyter Notebook file called
+      <code>using_las_converter_in_well_log_analysis.ipynb</code> that also can
+      be used in
+      <a
+        href="https://colab.research.google.com/drive/1_XJR7pNvJtV66NiKFD4v60GIAjYK3f-C?usp=sharing"
+        >Google Colab console</a
+      >.
+    </p>
+    <p>
+      For testing the saved files in <code>results</code> folder, there is also
+      <a
+        href="https://colab.research.google.com/drive/1a-HC1smv6r34TH6bhvemqkEOwjpyiYiV?usp=sharing"
+        >Google Colab Notebook file</a
+      >
+      <code>using_csv_made_from_las_converter_for_well_log_analysis.ipynb</code
+      >.
+    </p>
+    <p><a href="#las_converter">back to top</a></p>
+  </body>
+</html>
